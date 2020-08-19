@@ -9,8 +9,8 @@
 			{!! $errors->first('mail','<small class="help-block">:message</small>') !!}
 		</div>
 		<div class="form-group {!! $errors->has('mot_de_passe') ? 'has-error' : '' !!}">
-			{!! Form::label('password','Mot de passe : ') !!}
-			{!! $errors->first('password','<small class="help-block">:message</small>') !!}
+			{!! Form::label('mot_de_passe','Mot de passe : ') !!}
+			{!! $errors->first('mot_de_passe','<small class="help-block">:message</small>') !!}
 		</div>
 		{!! Form::password('password') !!}<br />
 		{!! Form::submit('Connexion') !!}
